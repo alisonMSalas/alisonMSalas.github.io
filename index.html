@@ -4,267 +4,519 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alison Salas - Estudiante de Ingeniería en Software | Desarrolladora Full-Stack | Portafolio Personal">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
-    <title>Portafolio | Alison Salas</title>
+    <title>Alison Salas | Desarrolladora Full-Stack</title>
 </head>
 <body>
-    <!-- Secciòn INICIO -->
-    <span class="sombra">
-        <section id="inicio" class="inicio">
-            <div class="contenido">
-                <header>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
                     <div class="logo">
-                        <i class="fa-brands fa-codepen"></i>
-                        <h1>A<span>S</span></h1>
+                <span class="logo-text">A<span class="accent">S</span></span>
                     </div>
-                    <nav id="nav" class="">
-                        <a href="#inicio">Inicio</a>
-                        <a href="#servicios">Sobre mí</a>
-                        <a href="#habilidades">Habilidades</a>
-                        <a href="#trabajos">Proyectos</a>
-                        <a href="#contacto">Contacto</a>
+            <nav class="nav" id="nav">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+                <a href="#habilidades" class="nav-link">Habilidades</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
                     </nav>
-    
-                    <!-- Icono del menu responsive -->
-                    <div id="icono-nav" onclick="responsiveMenu()">
-                        <i class="fa-solid fa-bars"></i>
+            <div class="header-actions">
+                <div class="social-links">
+                    <a href="https://github.com/alisonMSalas" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/mikasalas_23" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100094732628346" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <a href="https://wa.me/593998386869" class="btn-primary" target="_blank">HABLEMOS</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="hero-background">
+            <div class="bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-subtitle">HOLA, SOY UNA</p>
+                    <h1 class="hero-title">
+                        <span class="title-main">Desarrolladora</span>
+                        <span class="title-accent">Full-Stack.</span>
+                    </h1>
+                    <p class="hero-description">
+                        Hola, soy Alison Salas, una apasionada desarrolladora full-stack basada en Ecuador. 
+                        Actualmente cursando el séptimo semestre de Ingeniería en Software en la Universidad Técnica de Ambato.
+                    </p>
+                    <button class="btn-primary btn-large">VER PROYECTOS</button>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="img/fotomia.png" alt="Alison Salas" class="profile-img">
+                        <div class="image-decoration"></div>
                     </div>
-    
-                  
-                </header>
-    
-                <div class="fila">
-                    <div class="col">
-                        <h1>Hola!</h1>
-                        <h2 >Soy <span class="typedText"></span></h2>
-                        <p>Actualmente estoy cursando el segundo año de la carrera de Ingeniería en Software en la Universidad Técnica de Ambato.</p>
-                        <div class="redes">
-                            <a href="https://github.com/alisonMSalas"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://www.instagram.com/mikasalas_23?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100094732628346"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MÍ SECTION -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="img/fotomia2.jpg" alt="Alison Salas" class="about-img">
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <div class="stat-number">3+</div>
+                                <div class="stat-label">Años de Estudio</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">Proyectos Completados</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">7º</div>
+                                <div class="stat-label">Semestre Actual</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="contenedor-img">
-                            <img  src="img/fotomia.png" alt="">
-                        </div>
+                </div>
+                <div class="about-text">
+                    <p class="section-subtitle">DÉJAME PRESENTARME</p>
+                    <h2 class="section-title">Sobre mí</h2>
+                    <p class="section-subtitle-secondary">Una historia de dedicación y perseverancia.</p>
+                    <p class="about-description">
+                        Soy Alison Salas, una estudiante apasionada de Ingeniería en Software con un enfoque especializado 
+                        en desarrollo full-stack y arquitectura de software. Mi curiosidad y dedicación me han llevado a 
+                        explorar tanto el frontend como el backend, creando soluciones completas e innovadoras.
+                    </p>
+                    <p class="about-description">
+                        Actualmente estoy cursando el séptimo semestre en la Universidad Técnica de Ambato, donde he 
+                        desarrollado sólidas bases en programación, desarrollo web, bases de datos y metodologías ágiles.
+                    </p>
+                    <div class="contact-info">
+                        <h3>Contacto</h3>
+                        <p>alisonsalas0319@gmail.com</p>
+                    </div>
+                    <div class="about-buttons">
+                        <button class="btn-secondary">DESCARGAR CV</button>
+                    </div>
                     </div>
                 </div>
             </div>
         </section>
-    </span>
 
-    <!-- sección SERVICIOS -->
-    <section id="servicios" class="servicios">
-        <div class="fila">
-            <div class="col">
-                <div class="card">
-                    <div class="icono color1">
-                        <div class="circulo">
-                            <i class="fa-solid fa-user"></i>
-                        </div>
+    <!-- HABILIDADES SECTION -->
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">QUÉ PUEDO HACER POR TI</p>
+                <h2 class="section-title">Habilidades</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
                     </div>
-                    <h3>Información Personal</h3>
-                    <p>Hola, soy Alison Salas, actualmente una estudiante apasionada por el campo del software, con un interés particular en el desarrollo frontend y el diseño. 
-                        Mi curiosidad y dedicación me han llevado a explorar también el ámbito del backend.</p>
-
-                    
+                    <h3>Desarrollo Frontend</h3>
+                    <p>Creación de interfaces de usuario modernas y responsivas usando Angular, Vue.js, React y tecnologías web avanzadas.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Desarrollo Backend</h3>
+                    <p>Desarrollo de APIs robustas y escalables usando Java con Spring Boot, gestión de bases de datos y arquitectura de microservicios.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Desarrollo Móvil</h3>
+                    <p>Desarrollo de aplicaciones móviles multiplataforma usando Ionic, con diseño de interfaces adaptables para diferentes dispositivos.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Análisis de Datos</h3>
+                    <p>Visualización y análisis de datos usando Power BI, creación de dashboards interactivos y reportes empresariales.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Testing</h3>
+                    <p>Implementación de pruebas automatizadas usando Karma y Jasmine para asegurar la calidad del código y funcionalidad.</p>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <div class="icono color2">
-                        <div class="circulo">
-                            <i class="fa-solid fa-book"></i>
+            <div class="technical-skills">
+                <h3>Tecnologías</h3>
+                <div class="skills-chart">
+                    <div class="skill-item" style="--progress: 306deg;">
+                        <div class="skill-name">Angular</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress">85%</div>
                         </div>
                     </div>
-                    <h3>Estudios</h3>
-                    <p>Estoy cursando el segundo año de Ingeniería en Software, donde he adquirido sólidas bases en programación, desarrollo web, y manejo de bases de datos. He trabajado en varios proyectos 
-                        universitarios que me han permitido perfeccionar mis habilidades en Java y desarrollo de aplicaciones web.</p>
-
-                    
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="icono color3">
-                        <div class="circulo">
-                            <i class="fa-solid fa-bullseye"></i>
+                    <div class="skill-item" style="--progress: 252deg;">
+                        <div class="skill-name">Java</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress">70%</div>
                         </div>
                     </div>
-                    <h3>Mis Cursos</h3>
-                    <p>Introducción Arduino</p>
-                    <p>React: De cero a experto</p>
-                    <h3>Mis Objetivos</h3>
-                    <p>Mi objetivo es continuar creciendo como profesional, especializándome en el desarrollo de software para sistemas empresariales. </p>
-
-                    
+                    <div class="skill-item" style="--progress: 270deg;">
+                        <div class="skill-name">Spring Boot</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress">75%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item" style="--progress: 234deg;">
+                        <div class="skill-name">Vue.js</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress">65%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item" style="--progress: 216deg;">
+                        <div class="skill-name">Ionic</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress">60%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item" style="--progress: 252deg;">
+                        <div class="skill-name">Power BI</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress">70%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item" style="--progress: 198deg;">
+                        <div class="skill-name">Karma/Jasmine</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress">55%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item" style="--progress: 288deg;">
+                        <div class="skill-name">MySQL</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress">80%</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="fila">
-           
-          
-            
         </div>
     </section>
 
-    
-
-    
-
-    <!-- sección habilidades -->
-    <!-- sección habilidades -->
-    <div class="habilidades" id="habilidades">
-        <section class="hoc container clear"> 
-            <div class="contenedor-habi">
-                <h2>Habilidades</h2>
-                <div class="sectiontitle">
-                    <p class="nospace font-xs">Presento las competencias y herramientas tecnológicas en las que me especializo.</p>
-                    <h4 class="heading font-x2">Se refleja mi experiencia y mi continuo desarrollo profesional.</h4>
+    <!-- PROYECTOS SECTION -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Proyectos</h2>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Desarrollo Web</button>
+                <button class="filter-btn" data-filter="mobile">Aplicaciones</button>
+                <button class="filter-btn" data-filter="design">Diseño</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="img/salud.png" alt="Sistema de Gestión de Salud">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/rafaelsoriano04/gestor-centro-de-salud" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sistema de Gestión de Salud</h3>
+                        <p>Sistema completo para la gestión administrativa y clínica de centros de salud.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Swing</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="fila">
-                    <ul class="pr-charts nospace group center" id="skillList">
-                      
-                  
-                            <ul class="pr-charts nospace group center" id="skillList">
-                                <li class="pr-chart-ctrl" data-animate="false">
-                                    <div class="pr-chart" data-percent="10"><i></i></div>
-                                    <p>Javascript</p>
-                                </li>
-                                <li class="pr-chart-ctrl" data-animate="false">
-                                    <div class="pr-chart" data-percent="60"><i></i></div>
-                                    <p>Java</p>
-                                </li>
-                                <li class="pr-chart-ctrl" data-animate="false">
-                                    <div class="pr-chart" data-percent="30"><i></i></div>
-                                    <p>MySql</p>
-                                </li>
-                                <li class="pr-chart-ctrl" data-animate="false">
-                                    <div class="pr-chart" data-percent="5"><i></i></div>
-                                    <p>React</p>
-                                </li>
-                            </ul>
-                        
-                    </ul>
+
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="img/math.png" alt="MathMaster Challenge">
+                        <div class="project-overlay">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>MathMaster Challenge</h3>
+                        <p>Juego educativo interactivo para mejorar habilidades matemáticas.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Android</span>
+                        </div>
+                    </div>
                 </div>
                
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="img/pagina.png" alt="Hotel Agave Website">
+                        <div class="project-overlay">
             </div>
-        </section>
     </div>
-    
-    
-    
-    
-    
-
-
-    <!-- sección trabajos -->
-    <section class="trabajos" id="trabajos">
-        <h2>Mis Trabajos</h2>
-
-        <nav>
-            <a href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
-            <a href="javascript:void(0)" class="" id="disenio" onclick="verCategoria('disenio')">Diseño</a>
-            <a href="javascript:void(0)" class="" id="programacion" onclick="verCategoria('programacion')">Programación</a>
-           
-        </nav>
-
-        <div class="galeria">
-            <div class="item programacion">
-                <img src="img/salud.png" alt="">
-                <div class="info">
-                    <h3>Gestión Centro de Salud</h3>
-                    <span>Java</span><span>MySql</span>
-                    
-                    <a >Diseñada para mejorar la eficiencia operativa de los centros de salud mediante la automatización de los procesos administrativos y clínicos. </a>
+                    <div class="project-content">
+                        <h3>Hotel Agave Website</h3>
+                        <p>Plataforma web moderna para reservas y información del hotel.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
                 </div>
             </div>
-            <div class="item programacion">
-                <img src="img/math.png" alt="">
-                <div class="info">
-                    <h3>MathMaster Challenge</h3>
-                    <span>Java</span>
-                 
-                    <a >Es un juego educativo interactivo diseñado para mejorar las habilidades matemáticas de los usuarios de todas las edades.</a>
+                </div>
+
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="img/task.png" alt="Task Master App">
+                        <div class="project-overlay">
                 </div>
             </div>
-            
-            <div class="item disenio">
-                <img src="img/pagina.png" alt="">
-                <div class="info">
-                    <h3>Página Web Hotel Agave</h3>
-                    <span>html</span><span>css</span>
-                    <a>Diseñada para mejorar la experiencia de reserva en línea y proporcionar una plataforma informativa y visualmente atractiva para los visitantes.</a>
-                </div>
-            </div>
-            
-           
-            <div class="item programacion">
-                <img src="img/task.png" alt="">
-                <div class="info">
+                    <div class="project-content">
                     <h3>Task Master</h3>
-                    <span>Java</span><span>MySql</span>
-                    <a>Diseñado para ayudar a los usuarios a organizar y priorizar sus actividades diarias de manera eficiente.</a>
+                        <p>Aplicación para organización y gestión de tareas diarias.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Swing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="img/portafolio.png" alt="Portafolio Personal">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/alisonMSalas/alisonMSalas.github.io" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
                 </div>
             </div>
-            <div class="item disenio">
-                <img src="img/portafolio.png" alt="">
-                <div class="info">
+                    <div class="project-content">
                     <h3>Portafolio Personal</h3>
-                    <span>html</span><span>css</span><span>javascript</span>
-                    <a>Se diseño y desarrollar mi propio portafolio web, donde presento mis estudios, habilidades y proyectos destacados.</a>
+                        <p>Diseño y desarrollo de mi portafolio web personal.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NUEVOS PROYECTOS DEL SÉPTIMO SEMESTRE -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="img/seguro.png" alt="Gestor de Seguros">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/alisonMSalas/insurance-manager-front" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Gestor de Seguros</h3>
+                        <p>Desarrollo de una plataforma para la gestión de seguros. Implementación de pruebas automatizadas para asegurar la calidad del software. Gestión de componentes, servicios y validaciones.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Karma</span>
+                            <span class="tech-tag">Jasmine</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="img/finanzas.jpg" alt="Finanzas Personales">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/alisonMSalas/finance-management-back" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Finanzas Personales</h3>
+                        <p>Diseño y desarrollo de aplicación para gestión de finanzas personales: metas de ahorro, control de gastos, automatización de pagos y generación de reportes. Enfoque en la usabilidad y reportes visuales para el usuario.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="img/foro.jpg" alt="Foro Académico">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/rafaelsoriano04/uta-forum-front" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Foro Académico (App Móvil)</h3>
+                        <p>Aplicación móvil para foros académicos: visualización de publicaciones, comentarios, gestión de perfil y manejo de contenido reportado. Implementación de sistema de "strikes" para mensajes inapropiados.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Ionic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="img/spa.jpg" alt="Spa Manage">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/alisonMSalas/Therapy-management" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Spa Manage</h3>
+                        <p>Sistema CRUD básico para administrar salas, citas y clientes de un spa. Enfoque en eficiencia de flujos y facilidad de uso.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="img/reservas.png" alt="Reserva de Aulas y Laboratorios">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/FreddyA12/reservas-aulas-front" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Reserva de Aulas y Laboratorios</h3>
+                        <p>Sistema implementado en la universidad para la gestión de reservas de aulas y laboratorios. Utilizado activamente por la facultad para optimizar el uso de espacios académicos.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-           
         </div>
     </section>
 
-    <!-- sección contacto -->
-    <section class="contacto" id="contacto">
-        <div class="contenedor-contacto">
-            <h2>Contacto</h2>
-            <div class="fila">
-                <div class="col">
-                    <div class="info">
-                        <h3>Github</h3>
-                        <a href="https://github.com/alisonMSalas"><i class="fa-brands fa-github"></i></a>
+    <!-- CONTACTO SECTION -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Contacto</h2>
+                    <p class="contact-description">
+                        ¿Tienes un proyecto en mente? Me encantaría escuchar sobre él. 
+                        Trabajemos juntos para crear algo increíble.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>alisonsalas0319@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Ubicación</h4>
+                                <p>Ambato, Ecuador</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Teléfono</h4>
+                                <p>0998386869</p>
                     </div>
-                    <div class="info">
-                        <h3>Instagram</h3>
-                        <a href="https://www.instagram.com/mikasalas_23?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
                     </div>
-                    <div class="info">
-                        <h3>País</h3>
-                        <p>Ecuador</p>
                     </div>
-                    <div class="info">
-                        <h3>Ciudad</h3>
-                        <p>Ambato</p>
+                    <div class="social-links">
+                        <a href="https://github.com/alisonMSalas" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/mikasalas_23" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100094732628346" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/alison-salas" class="social-link"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col">
-                    <form action="https://formcarry.com/s/q5Njw1NW-qR" method="POST" enctype="multipart/form-data">
-                        <input type="text" name="name" placeholder="Nombre..." required>
-                        <input type="email" name="email" placeholder="Correo..." required>
-                        <textarea name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-                        <input type="submit" value="Enviar" class="btn">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Tu email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Asunto" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">ENVIAR MENSAJE</button>
                     </form>
-                    
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>Creado por Alison Salas | &copy; Ingenieria en Software</p>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Alison Salas. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#sobre-mi">Sobre mí</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </div>
+        </div>
     </footer>
+
     <script src="funciones.js"></script>
 </body>
 </html>
