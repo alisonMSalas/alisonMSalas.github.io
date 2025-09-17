@@ -85,10 +85,17 @@ sr.reveal('.contact-form', { delay: 400, origin: 'right' });
 // ===== MOBILE MENU =====
 const menuToggle = document.getElementById('menu-toggle');
 const nav = document.getElementById('nav');
+const navClose = document.getElementById('nav-close');
 
 menuToggle.addEventListener('click', () => {
     nav.classList.toggle('active');
     menuToggle.classList.toggle('active');
+});
+
+// Close mobile menu with close button
+navClose.addEventListener('click', () => {
+    nav.classList.remove('active');
+    menuToggle.classList.remove('active');
 });
 
 // Close mobile menu when clicking on a link
